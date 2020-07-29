@@ -26,7 +26,7 @@ SECRET_KEY = 'rw=8!v#jej8!(v%d8c=7jnvop=5v+sl83f#qaqesqxki=p@qr='
 DEBUG = True
 
 ALLOWED_HOSTS = ['projectlife--smartin2920.repl.co',
-'projectlife.smartin2920.repl.co']
+'projectlife.smartin2920.repl.co', 'projectlife-1--tantoine04.repl.co', 'projectlife-1.tantoine04.repl.co']
 
 # Application definition
 
@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Project-specific
+    'users',
+    'myapp',
+
 ]
 
 MIDDLEWARE = [
@@ -54,7 +59,7 @@ ROOT_URLCONF = 'finalproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
