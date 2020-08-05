@@ -1,45 +1,39 @@
- # from django.views.generic import TemplateView
+# from django.views.generic import TemplateView
 from django.shortcuts import render
-# from .forms import DonorForm
-from .models import Donor
+from .forms import DonorForm
+from .models import Donor, Patient
+
 
 # Create your views here.POST]
 
-# def donor_create_view(request):
-#     form = DonorForm (request.POST or None)
-#     if form.is_valid():
-#          form.save()
+def home(request):
+  return render(request, 'myapp/home.html', {})
 
-#     context = { 
-#         'form': form
-#      }
-#     return render(request, 'donor/donor_create.html', context)
+def donor_views(request):
+    form = DonorForm (request.POST or None)
+    if form.is_valid():
+        form.save()
+    context = { 
+        'form': form
+     }
+    return render(request, 'donor/donor_create.html', context)
 
-# class Homeview(TemplateView):
-#     template = 'home/home.html'
+# def home(TemplateView):
+    # template = 'home/home.html'
 
-#     def get(self, request):
-#       form = PatientForm() (request.POST)
-#       return render(request, self.template_name, {'form':form})
-#       text = form.cleaned_data ['post']
-#       form = PatientForm
-#       return redirect ('home:home')
+    def get(self, request):
+      form = PatientForm() (request.POST)
+      return render(request, self.template_name, {'form':form})
+      text = form.cleaned_data ['post']
+      form = PatientForm
+      return redirect ('home:home')
 
-#       args = {"form".form} ('text'.text)
-#       return render(request, self.template_name, args)
+      args = {"form".form} ('text'.text)
+      return render(request, self.template_name, args)
 
   
     # def post(self.request):
-    # def donor(request):
-#     if request.method == 'GET':
-#           form = ContactForm()
-#     else:
-#           form = ContactForm(data=request.POST)
-#           if form.is_valid():
-#               form.save()
-#               return redirect(to='')
-
-
+    
 # def donor(request):
 #     if request.method == 'GET':
 #           form = ContactForm()
