@@ -1,41 +1,9 @@
 {% extends 'base.html' %} 
 {% block content %}
 
-<div class="w-33 pa3">
-	<h2>{{ patient.name }}</h2>
-
-	<div class="flex">
-		<div class="pr2"><i class="icofont-location-pin"></i></div>
-      <div>
-        {{ patient.address_1 }}<br />
-        {% if patient.address_2 %}
-          {{ patient.address_2 }}<br />
-        {% endif %}
-        {{ patient.city }}, {{ patientt.state }} {{ patient.zip_code }}
-      </div>
-    </div>
-
-    {% if patient.phone_number %}
-    <div class="flex">
-      <div class="pr2"><i class="icofont-phone"></i></div>
-      <div>{{ patient.phone_number }}</div>
-    </div>
-    {% endif %}
-
-    {% if patient.email %}
-    <div class="flex">
-      <div class="pr2"><i class="icofont-ui-email"></i></div>
-      <div>{{ patient.email }}</div>
-    </div>
-    {% endif %} 
-
-   
-    </div>
 
 
-     {% endif %} 
-
-     
+     /Add a "start here" 
 
 
    

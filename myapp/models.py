@@ -19,7 +19,6 @@ class Patient(models.Model):
 class Donor(models.Model):
     name = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
-    birthday = models.DateField(null=True, blank=True)
     blood_type = models.CharField(max_length=100)
     donation_type = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
