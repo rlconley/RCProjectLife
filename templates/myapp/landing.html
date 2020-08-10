@@ -37,18 +37,13 @@
         
         <div class="boxinfo">
           <h4> I need to find an organ donor. </h4>
-          <button class="button">Start</button>
+          <a href="/patient">
+          <button class="button">Start</button></a>
         </div>
-
-        <div class="boxinfo">
+        <form action="{% url 'new_donor' %}" class="boxinfo">
           <h4> I want to donate an organ. </h4>
-          <button class="button">Start</button>
-        </div>
-            
-
-            
-          
-
+          <input type="submit" value="Start" />
+        </form>
       </div>
 
     
