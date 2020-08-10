@@ -25,7 +25,7 @@ SECRET_KEY = 'rw=8!v#jej8!(v%d8c=7jnvop=5v+sl83f#qaqesqxki=p@qr='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['projectlife--smartin2920.repl.co', '127.0.0.1',
+ALLOWED_HOSTS = ['projectlife--smartin2920.repl.co', 
 'projectlife.smartin2920.repl.co', 'projectlife-1--tantoine04.repl.co', 'projectlife-1.tantoine04.repl.co','projectlife--mattpoole.repl.co','projectlife.mattpoole.repl.co']
 
 # Application definition
